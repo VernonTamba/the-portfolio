@@ -1,0 +1,29 @@
+.Header {
+  background-color: antiquewhite;
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  padding: 0 100px;
+}
+
+.Header__logo {
+  font-family: "Agdasima", sans-serif;
+  letter-spacing: 3px;
+}
+
+.Header__mode {
+  cursor: pointer;
+  height: 50%;
+  width: fit-content;
+  object-fit: contain;
+  transition: all 0.2s ease;
+  padding: 5px;
+  margin: 5px;
+}
+
+.Header__mode:hover {
+  background-color: #1e2022;
+  border-radius: 50%;
+}

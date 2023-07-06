@@ -1,0 +1,41 @@
+.Intro {
+  height: 85vh;
+  background-color: #1e2022;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 100px;
+}
+
+.Intro__title {
+  background: linear-gradient(90deg, #1e2022, #52616b);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 5em;
+}
+
+.Intro__subtitle {
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+.Intro__subtitle:nth-of-type(2) {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  border: 1px outset #1e2022;
+  padding: 5px 10px;
+  width: fit-content;
+  border-radius: 0.3rem;
+}
+
+.Intro__right {
+  height: 60rem;
+  width: 60rem;
+}
+
+.Intro__profilePicture {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
