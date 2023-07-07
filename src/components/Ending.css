@@ -1,0 +1,10 @@
+.Ending {
+  padding: 0 100px;
+  height: 100vh;
+  background-color: #f0f5f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

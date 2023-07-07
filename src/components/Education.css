@@ -1,0 +1,52 @@
+.Education {
+  padding: 0 100px;
+  height: 100vh;
+  background-color: #f0f5f9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Education__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Education__title {
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  border-bottom: 5px dotted #000;
+}
+
+.Education__right {
+  background-image: url("https://web1.aup.edu.ph/alumni/wp-content/uploads/2016/03/aup_aerial_view.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 50%;
+  width: 50%;
+  position: relative;
+  border: 10px outset #000;
+  border-radius: 1rem;
+}
+
+.Education__schoolLogo {
+  position: absolute;
+  top: 20%;
+  left: 90%;
+  transform: translate(-90%, -20%);
+  height: 40%;
+  width: 40%;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.Education__year {
+  margin-top: 20px;
+  font-size: 1rem;
+  font-weight: 200;
+  font-style: italic;
+}

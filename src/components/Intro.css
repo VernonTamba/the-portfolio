@@ -1,6 +1,6 @@
 .Intro {
   height: 85vh;
-  background-color: #1e2022;
+  background-color: #f0f5f9;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,7 +17,7 @@
 
 .Intro__subtitle {
   font-size: 0.8rem;
-  color: #fff;
+  /* color: #fff; */
 }
 
 .Intro__subtitle:nth-of-type(2) {
@@ -30,8 +30,8 @@
 }
 
 .Intro__right {
-  height: 60rem;
-  width: 60rem;
+  height: 100%;
+  width: 100%;
 }
 
 .Intro__profilePicture {

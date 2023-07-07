@@ -14,8 +14,8 @@ const Main = () => {
         </div>
         <div className="Main__right">
           <p className="Main__description">
-            Hi, again! My name is <span>Vernon Joseph Yeremia Tamba</span>. I am
-            an Information Technology fresh graduate and{" "}
+            Hi, again! My name is <span>Vernon Joseph Yeremia Tamba</span> from
+            Indonesia. I am an Information Technology fresh graduate and{" "}
             <span>
               genuinely aspiring to be involved in the web development world
             </span>
@@ -26,7 +26,6 @@ const Main = () => {
           </p>
         </div>
       </div>
-
       <h2 className="Main__footer">Put something here ...</h2>
     </div>
   );
