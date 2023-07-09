@@ -7,7 +7,7 @@ import Gmail from "../img/gmail.png";
 import Instagram from "../img/instagram.png";
 import Facebook from "../img/facebook.png";
 
-const ContactMe = () => {
+const ContactMe = ({ darkMode }) => {
   const GITHUB_URL = "";
   const LINKEDIN_URL = "";
   const INSTAGRAM_URL = "";
@@ -16,7 +16,7 @@ const ContactMe = () => {
   const GMAIL_URL = "";
 
   return (
-    <div className="ContactMe">
+    <div className={`ContactMe ${darkMode && "darkMode"}`}>
       <h1 className="ContactMe__title">Let us get connected!</h1>
       <div className="ContactMe__container">
         <a

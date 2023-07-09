@@ -1,6 +1,5 @@
 .Main {
   height: 100vh;
-  background-color: #f0f5f9;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -11,6 +10,7 @@
 .Main__header {
   font-weight: 900;
   font-size: 2.5rem;
+  text-transform: uppercase;
 }
 
 .Main__content {
@@ -18,13 +18,31 @@
   justify-content: center;
   align-items: center;
   gap: 5em;
-  padding-block: 10px;
+  padding: 20px;
   border-top: 5px outset #000;
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
   border-bottom: 5px outset #000;
   border-bottom-left-radius: 2rem;
   border-bottom-right-radius: 2rem;
+  transition: all 0.3s ease;
+}
+
+.Main__content--darkMode {
+  border-top: 5px outset #fff;
+  border-bottom: 5px outset #fff;
+}
+
+.Main__content:hover {
+  background-color: #52616b;
+  color: #f0f5f9;
+  transform: scale(1.025);
+}
+
+.Main__content--darkMode:hover {
+  background-color: #f0f5f9;
+  color: #52616b;
+  transform: scale(1.025);
 }
 
 .Main__description > span {
@@ -37,4 +55,15 @@
   letter-spacing: 2px;
   text-transform: uppercase;
   font-weight: 200;
+}
+
+.Main__left {
+  width: fit-content;
+  height: fit-content;
+}
+
+.Main__left > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }

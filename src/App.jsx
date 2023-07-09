@@ -1,5 +1,4 @@
 import { useState } from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import Header from "./components/Header";
 import Intro from "./components/Intro";
@@ -19,33 +18,32 @@ function App() {
 
   return (
     <div className="App">
-      {/* <img src={logo} className="App-logo" alt="logo" /> */}
       {/* NAVBAR/HEADER */}
       <Header darkMode={darkMode} setDarkMode={setDarkMode} />
 
       {/* ABOUT ME INTRO/LANDING PAGE */}
-      <Intro />
+      <Intro darkMode={darkMode} />
 
       {/* WHAT DO I WANT TO BECOME/DO? */}
-      <Main />
+      <Main darkMode={darkMode} />
 
       {/* EDUCATION */}
-      <Education />
+      <Education darkMode={darkMode} />
 
       {/* WORK EXPERIENCE */}
-      <WorkExperience />
+      <WorkExperience darkMode={darkMode} />
 
       {/* PERSONAL MINI PROJECTS */}
-      <MiniProjects />
+      <MiniProjects darkMode={darkMode} />
 
       {/* HOBBIES/INTERESTS */}
-      <Hobbies />
+      <Hobbies darkMode={darkMode} />
 
       {/* CONTACT ME */}
-      <ContactMe />
+      <ContactMe darkMode={darkMode} />
 
       {/* THANK YOU "Thank you for scrolling up to the end!" */}
-      <Ending />
+      <Ending darkMode={darkMode} />
     </div>
   );
 }

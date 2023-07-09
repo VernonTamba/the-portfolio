@@ -1,9 +1,9 @@
 import React from "react";
 import "./MiniProjects.css";
 
-const MiniProjects = () => {
+const MiniProjects = ({ darkMode }) => {
   return (
-    <div className="MiniProjects">
+    <div className={`MiniProjects ${darkMode && "darkMode"}`}>
       <h1 className="MiniProjects__title">Mini Projects</h1>
       <p>Coming soon. Pick the projects first!</p>
     </div>

@@ -1,10 +1,13 @@
 .MiniProjects {
-  background-color: #f0f5f9;
   height: 200vh;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2em;
+}
+
+.MiniProjects__title {
+  font-weight: 900;
 }
 
 /* USE GRID? */

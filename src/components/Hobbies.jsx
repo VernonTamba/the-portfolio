@@ -6,29 +6,43 @@ import Swimming from "../img/swimming.png";
 import Piano from "../img/piano.png";
 import Guitar from "../img/guitar-playing.png";
 
-const Hobbies = () => {
+const Hobbies = ({ darkMode }) => {
   return (
-    <div className="Hobbies">
+    <div className={`Hobbies ${darkMode && "darkMode"}`}>
       <div className="Hobbies__top">
-        <h1 className="Hobbies__title">Hobbies & Interests</h1>
+        <h1
+          className={`Hobbies__title ${darkMode && "Hobbies__title--darkMode"}`}
+        >
+          Hobbies & Interests
+        </h1>
         <div className="Hobbies__container">
-          <div className="Hobbies__item">
+          <div
+            className={`Hobbies__item ${darkMode && "Hobbies__item--darkMode"}`}
+          >
             <h2 className="Hobbies__name">Badminton</h2>
             <img src={Badminton} alt="badminton" />
           </div>
-          <div className="Hobbies__item">
+          <div
+            className={`Hobbies__item ${darkMode && "Hobbies__item--darkMode"}`}
+          >
             <h2 className="Hobbies__name">Football/Futsal</h2>
             <img src={Football} alt="football" />
           </div>
-          <div className="Hobbies__item">
+          <div
+            className={`Hobbies__item ${darkMode && "Hobbies__item--darkMode"}`}
+          >
             <h2 className="Hobbies__name">Swimming</h2>
             <img src={Swimming} alt="swimming" />
           </div>
-          <div className="Hobbies__item">
+          <div
+            className={`Hobbies__item ${darkMode && "Hobbies__item--darkMode"}`}
+          >
             <h2 className="Hobbies__name">Piano</h2>
             <img src={Piano} alt="piano" />
           </div>
-          <div className="Hobbies__item">
+          <div
+            className={`Hobbies__item ${darkMode && "Hobbies__item--darkMode"}`}
+          >
             <h2 className="Hobbies__name">Guitar</h2>
             <img src={Guitar} alt="guitar" />
           </div>

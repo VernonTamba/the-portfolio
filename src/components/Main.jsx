@@ -1,16 +1,14 @@
 import React from "react";
 import "./Main.css";
+import MyProfilePicture from "../img/vernon-2-nobg-cropped.png";
 
-const Main = () => {
+const Main = ({ darkMode }) => {
   return (
-    <div className="Main">
+    <div className={`Main ${darkMode && "darkMode"}`}>
       <h2 className="Main__header">Brief intro about me!</h2>
-      <div className="Main__content">
+      <div className={`Main__content ${darkMode && "Main__content--darkMode"}`}>
         <div className="Main__left">
-          <img
-            src="https://i.guim.co.uk/img/uploads/2017/10/06/David-Shariatmadari,-L.png?width=300&quality=85&auto=format&fit=max&s=528f2fda71b31830ef9f0acbe9a4aa3c"
-            alt="me"
-          />
+          <img src={MyProfilePicture} alt="me" />
         </div>
         <div className="Main__right">
           <p className="Main__description">
@@ -26,7 +24,7 @@ const Main = () => {
           </p>
         </div>
       </div>
-      <h2 className="Main__footer">Put something here ...</h2>
+      <h2 className="Main__footer">Born in APRIL 8, 2001 --- 22 years old</h2>
     </div>
   );
 };

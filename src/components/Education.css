@@ -1,7 +1,6 @@
 .Education {
   padding: 0 100px;
   height: 100vh;
-  background-color: #f0f5f9;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -19,6 +18,11 @@
   font-size: 3rem;
   margin-bottom: 20px;
   border-bottom: 5px dotted #000;
+  font-weight: 900;
+}
+
+.Education__title--darkMode {
+  border-bottom: 5px dotted #fff;
 }
 
 .Education__right {
@@ -31,6 +35,10 @@
   position: relative;
   border: 10px outset #000;
   border-radius: 1rem;
+}
+
+.Education__right--darkMode {
+  border: 10px outset #fff;
 }
 
 .Education__schoolLogo {

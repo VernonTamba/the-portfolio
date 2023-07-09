@@ -1,6 +1,5 @@
 .WorkExperience {
   height: 100vh;
-  background-color: #f0f5f9;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -13,12 +12,24 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   transition: all 0.3s ease-in-out;
+}
+
+.WorkExperience__description--darkMode {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(255, 255, 255, 0.3) 0px 1px 3px -1px;
 }
 
 .WorkExperience__description:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 20px 30px;
+  font-weight: bolder;
+}
+
+.WorkExperience__description--darkMode:hover {
+  box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
   padding: 20px 30px;
   font-weight: bolder;
 }
@@ -28,6 +39,11 @@
   letter-spacing: 10px;
   font-size: 3rem;
   border-bottom: 5px dotted #000;
+  font-weight: 900;
+}
+
+.WorkExperience__title--darkMode {
+  border-bottom: 5px dotted #fff;
 }
 
 .WorkExperience__image {
@@ -63,9 +79,11 @@
   font-size: 0.75rem;
   width: 80%;
   font-weight: 100;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
-    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
   transition: all 0.3s ease;
+}
+
+.WorkExperience__footer--darkMode {
+  color: #52616b;
 }
 
 .WorkExperience__footer:hover {
@@ -73,4 +91,13 @@
   font-weight: 600;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.WorkExperience__footer--darkMode:hover {
+  width: 85%;
+  font-weight: 600;
+  background-color: #fff;
+  box-shadow: rgba(255, 255, 255, 0.3) 0px 19px 38px,
+    rgba(255, 255, 255, 0.22) 0px 15px 12px;
+  color: #1e2022;
 }

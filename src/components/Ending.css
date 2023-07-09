@@ -1,10 +1,62 @@
 .Ending {
   padding: 0 100px;
   height: 100vh;
-  background-color: #f0f5f9;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  position: relative;
+}
+
+.Ending__title {
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+.Ending__contentFooter {
+  font-weight: 200;
+  font-style: italic;
+  font-size: 1.3rem;
+  margin-top: 5px;
+}
+
+.Ending__footerDiv {
+  font-size: 0.8rem;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f0f5f9;
+  background-color: #52616b;
+  padding: 5px 20px;
+  border-radius: 0.4rem;
+}
+
+.Ending__profilePicture {
+  position: absolute;
+  height: 30%;
+  width: 30%;
+  object-fit: contain;
+  bottom: 0;
+}
+
+.Ending__footerLogo {
+  height: 5vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .Ending__footerLogo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
