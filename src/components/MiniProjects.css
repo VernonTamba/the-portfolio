@@ -1,13 +1,115 @@
 .MiniProjects {
-  height: 200vh;
+  min-height: 200vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 2em;
+  text-align: center;
+  padding: 30px 100px;
+}
+
+.MiniProjects__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  gap: 3em;
+  padding: 40px 0;
+  place-items: center;
+}
+
+.MiniProjects__item {
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1em;
+}
+
+.MiniProjects__item:hover {
+  transform: translateY(-10px);
+  background-color: var(--color-lessDark);
+  color: var(--color-light);
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.MiniProjects__preview {
+  height: 35em;
+  width: 35em;
+  object-fit: contain;
+  margin: -80px;
 }
 
 .MiniProjects__title {
   font-weight: 900;
+  font-size: 3em;
+  letter-spacing: 10px;
+  text-transform: uppercase;
 }
 
-/* USE GRID? */
+.MiniProjects__technologies {
+  padding: 10px 20px;
+  background-color: rgba(var(--color-lessDark), 1);
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+
+.MiniProjects__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+  margin-top: 20px;
+}
+
+.MiniProjects__buttons > a {
+  text-decoration: none;
+  color: var(--color-light);
+  background-color: var(--color-dark);
+  padding: 10px 20px;
+  border-radius: 0.4rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.MiniProjects__buttons > a:hover {
+  color: var(--color-dark);
+  background-color: var(--color-light);
+  font-weight: bold;
+}
+
+.MiniProjects__footer {
+  margin-top: 30px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  padding: 20px;
+}
+
+.MiniProjects__footer > a {
+  color: var(--color-lessDark);
+}
+
+.MiniProjects__footer > a:hover {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .MiniProjects {
+    margin-bottom: 80px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .MiniProjects {
+    padding: 30px 50px;
+  }
+
+  .MiniProjects__title {
+    font-size: 2.5rem;
+  }
+
+  .MiniProjects__subtitle {
+    font-size: 0.8rem;
+  }
+}

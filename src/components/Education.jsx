@@ -1,5 +1,6 @@
 import React from "react";
 import "./Education.css";
+import AUPLogo from "../img/aup-logo.png";
 
 const Education = ({ darkMode }) => {
   return (
@@ -27,11 +28,7 @@ const Education = ({ darkMode }) => {
           darkMode && "Education__right--darkMode"
         }`}
       >
-        <img
-          className="Education__schoolLogo"
-          src="https://upload.wikimedia.org/wikipedia/en/3/36/Adventist_University_of_the_Philippines_logo.png"
-          alt="AUP Logo"
-        />
+        <img className="Education__schoolLogo" src={AUPLogo} alt="AUP Logo" />
       </div>
     </div>
   );

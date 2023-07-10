@@ -60,3 +60,35 @@
     transform: rotate(360deg);
   }
 }
+
+@media screen and (max-width: 1122px) {
+  .Ending__title {
+    font-size: 3rem;
+  }
+
+  .Ending__content {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .Ending {
+    padding: 0 40px;
+  }
+  .Ending__title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+
+  .Ending__content {
+    font-size: 0.8rem;
+  }
+
+  .Ending__contentFooter {
+    font-size: 1rem;
+  }
+
+  .Ending__footerDiv {
+    font-size: 0.6rem;
+  }
+}

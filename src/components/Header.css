@@ -26,3 +26,16 @@
   background-color: #1e2022;
   border-radius: 50%;
 }
+
+@media screen and (max-width: 500px) {
+  .Header {
+    gap: 2em;
+    padding: 0 50px;
+  }
+  .Header__logo {
+    font-size: 1.3rem;
+  }
+  .Header__mode {
+    height: 40%;
+  }
+}

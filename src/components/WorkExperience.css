@@ -1,5 +1,5 @@
 .WorkExperience {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -15,6 +15,7 @@
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   transition: all 0.3s ease-in-out;
+  padding: 20px;
 }
 
 .WorkExperience__description--darkMode {
@@ -38,7 +39,7 @@
   text-transform: uppercase;
   letter-spacing: 10px;
   font-size: 3rem;
-  border-bottom: 5px dotted #000;
+  border-bottom: 5px solid #000;
   font-weight: 900;
 }
 
@@ -100,4 +101,10 @@
   box-shadow: rgba(255, 255, 255, 0.3) 0px 19px 38px,
     rgba(255, 255, 255, 0.22) 0px 15px 12px;
   color: #1e2022;
+}
+
+@media screen and (max-width: 500px) {
+  .WorkExperience__title {
+    font-size: 2.5rem;
+  }
 }

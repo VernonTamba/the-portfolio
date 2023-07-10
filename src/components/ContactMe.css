@@ -20,20 +20,25 @@
   justify-content: center;
   align-items: center;
   gap: 1em;
-  flex: 0.7;
+  flex: 0.9;
 }
 
 .ContactMe__item {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  height: 5em;
+  height: 7em;
   width: 100%;
   text-decoration: none;
   color: #1e2022;
   border-radius: 1rem;
   transition: all 0.2s ease-in-out;
-  padding-left: 40px;
+  padding-inline: 30px;
+}
+
+.ContactMe__item--darkMode {
+  background-color: var(--color-light);
+  color: var(--color-dark);
 }
 
 .ContactMe__item:hover {
@@ -43,9 +48,37 @@
     rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
 
+.ContactMe__item--darkMode:hover {
+  background-color: var(--color-lessDark);
+  color: var(--color-light);
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
 .ContactMe__item > img {
   height: 60%;
   width: fit-content;
   object-fit: contain;
   margin-right: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .ContactMe {
+    padding: 0 50px;
+  }
+
+  .ContactMe__container {
+    flex: 1.5;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .ContactMe {
+    padding: 0 50px;
+    margin-block: 80px;
+    flex-direction: column;
+  }
+  .ContactMe__title {
+    text-align: center;
+  }
 }

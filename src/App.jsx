@@ -12,6 +12,7 @@ import Ending from "./components/Ending";
 
 // TODO:
 // - Download all the images
+// - Change the a tags to link
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);

@@ -1,5 +1,5 @@
 .Intro {
-  height: 85vh;
+  min-height: 85vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,30 +30,51 @@
   font-size: 1rem;
 }
 
-.Intro__subtitle:nth-of-type(2) {
-  font-size: 1.2rem;
-  margin-top: 10px;
-  border: 1px outset #1e2022;
-  padding: 5px 10px;
-  width: fit-content;
-  border-radius: 0.3rem;
-}
-
 .Intro__left {
-  flex: 1;
+  flex: 0.5;
 }
 
 .Intro__middle {
-  flex: 2;
+  flex: 2.5;
   text-align: center;
 }
 
 .Intro__right {
-  flex: 1;
+  flex: 0.5;
 }
 
 .Intro__profilePicture {
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
+  height: 20em;
+  width: fit-content;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 700px) {
+  .Intro__title {
+    font-size: 4em;
+  }
+
+  .Intro__subtitle {
+    font-size: 0.8rem;
+  }
+
+  .Intro__profilePicture {
+    height: 15em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .Intro {
+    padding: 0 50px;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  .Intro__title {
+    font-size: 2.5em;
+  }
+
+  .Intro__subtitle {
+    font-size: 0.7rem;
+  }
 }

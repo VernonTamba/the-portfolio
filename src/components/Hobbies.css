@@ -1,8 +1,6 @@
 .Hobbies {
-  padding: 0 100px;
-  height: 100vh;
-  /* TODO: Remember to put an overflow so that the hobbies cards can be scrolled */
-  /* overflow: hidden; */
+  padding: 50px 100px;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -32,9 +30,8 @@
 .Hobbies__container {
   flex: 0.8;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
   gap: 2em;
-  /* overflow: scroll; */
 }
 
 .Hobbies__item {
@@ -78,8 +75,22 @@
 
 .Hobbies__bottom {
   text-align: center;
+  margin-top: 40px;
 }
 
 .Hobbies__footer > span {
   font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .Hobbies {
+    padding: 50px 50px;
+  }
+
+  .Hobbies__title {
+    text-align: center;
+  }
+  .Hobbies__top {
+    flex-direction: column;
+  }
 }

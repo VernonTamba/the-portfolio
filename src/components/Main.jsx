@@ -13,7 +13,7 @@ const Main = ({ darkMode }) => {
         <div className="Main__right">
           <p className="Main__description">
             Hi, again! My name is <span>Vernon Joseph Yeremia Tamba</span> from
-            Indonesia. I am an Information Technology fresh graduate and{" "}
+            Bekasi, Indonesia. I am an Information Technology fresh graduate and{" "}
             <span>
               genuinely aspiring to be involved in the web development world
             </span>
