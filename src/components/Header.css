@@ -23,7 +23,12 @@
 }
 
 .Header__mode:hover {
-  background-color: #1e2022;
+  background-color: var(--color-dark);
+  border-radius: 50%;
+}
+
+.Header__mode--darkMode:hover {
+  background-color: var(--color-light);
   border-radius: 50%;
 }
 

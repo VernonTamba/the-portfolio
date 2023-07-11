@@ -17,11 +17,12 @@ const MiniProjects = ({ darkMode }) => {
       name: "Simple Landing Page: Light & Dark Mode",
       videoUrl: `${LandingPageVideo}`,
       description:
-        "A landing page that is very simple yet responsive. Nothing extraordinary but it has dark mode?",
+        "A landing page that is very simple yet responsive. Nothing extraordinary but it has dark mode, dude.",
       techUsed: "HTML, CSS, JavaScript",
       codeUrl:
         "https://github.com/VernonTamba/simple-landing-page-light-dark-mode",
-      demoUrl: "-",
+      demoUrl: "https://simple-landing-page-light-dark-mode.vercel.app/",
+      lastUpdate: "March 28, 2022",
     },
     {
       name: "Simple Movie Grid",
@@ -30,7 +31,8 @@ const MiniProjects = ({ darkMode }) => {
         "Showing movies that are retrieved from The Movie Database (TMDB) that is being displayed in a grid form. Responsive and simple. With a bit of Framer Motion touches there.",
       techUsed: "React JS, CSS",
       codeUrl: "https://github.com/VernonTamba/simple-movie-grid",
-      demoUrl: "-",
+      demoUrl: "https://simple-movie-grid.vercel.app/",
+      lastUpdate: "April 4, 2022",
     },
     {
       name: "Netflix Clone",
@@ -39,7 +41,8 @@ const MiniProjects = ({ darkMode }) => {
         "A Netflix clone that only shows the front-end look of the real application. Perhaps not as similar to the Netflix now, but it still has that Netflix vibe!",
       techUsed: "React JS, CSS",
       codeUrl: "https://github.com/VernonTamba/netflix-clone-front-end",
-      demoUrl: "-",
+      demoUrl: "https://netflix-clone-front-end-beta.vercel.app/",
+      lastUpdate: "May 25, 2022",
     },
     {
       name: "LINE Clone",
@@ -48,7 +51,8 @@ const MiniProjects = ({ darkMode }) => {
         "A clone of a social media application called LINE. This clone is only about its front-end side/appearance. The logos used are from Material UI!",
       techUsed: "React JS, CSS",
       codeUrl: "https://github.com/VernonTamba/line-clone-front-end",
-      demoUrl: "-",
+      demoUrl: "https://line-clone-front-end.vercel.app/",
+      lastUpdate: "August 10, 2022",
     },
     {
       name: "Expenses List Info",
@@ -57,7 +61,8 @@ const MiniProjects = ({ darkMode }) => {
         "A small and simple app where it can store the expenses information and will display the summary information based on the specified year in the diagram form. As a matter of fact, this project was the requirement for my last phase of the internship interview in SRKK!",
       techUsed: "HTML, CSS (a bit of Bootstrap), JavaScript",
       codeUrl: "https://github.com/VernonTamba/expenses-list-info",
-      demoUrl: "-",
+      demoUrl: "https://expenses-list-info.vercel.app/",
+      lastUpdate: "August 19, 2022",
     },
     {
       name: "Simple Family Website",
@@ -66,7 +71,8 @@ const MiniProjects = ({ darkMode }) => {
         "My father asked me to create our family website. And this simple website was actually me trying to practice in making the family website. But, turns out, I have not started making my own family website. Hopefully, in the near future, I will be able to accomplish that.",
       techUsed: "HTML, CSS, JavaScript",
       codeUrl: "https://github.com/VernonTamba/simple-family-website",
-      demoUrl: "-",
+      demoUrl: "https://simple-family-website.vercel.app/",
+      lastUpdate: "August 25, 2022",
     },
     {
       name: "Simple Rock Scissors Paper Game",
@@ -75,7 +81,8 @@ const MiniProjects = ({ darkMode }) => {
         "A very simple web-based rock paper scissors game. The animation is made and supported by GSAP. Truthfully speaking, the animation is sadly only working in full screen size and thus not responsive. But anyways, the game is still playable and presentable.",
       techUsed: "HTML, CSS, JavaScript",
       codeUrl: "https://github.com/VernonTamba/simple-rock-paper-scissors-game",
-      demoUrl: "-",
+      demoUrl: "https://simple-rock-paper-scissors-game.vercel.app/",
+      lastUpdate: "June 13, 2023",
     },
     {
       name: "Simple Windows Web",
@@ -84,7 +91,8 @@ const MiniProjects = ({ darkMode }) => {
         "Windows 11 in web! Just the front-end look of Windows 11. No functionalities or back-end things here unfortunately. Still, it looks quite similar, no?",
       techUsed: "HTML, CSS, JavaScript (with a tiny bits of GSAP)",
       codeUrl: "https://github.com/VernonTamba/simple-web-windows",
-      demoUrl: "-",
+      demoUrl: "https://simple-web-windows.vercel.app/",
+      lastUpdate: "June 14, 2023",
     },
     {
       name: "Simple Todo List",
@@ -93,7 +101,8 @@ const MiniProjects = ({ darkMode }) => {
         "A very simple todo list app has the basic functionality of adding and removing the todos.",
       techUsed: "React JS, CSS",
       codeUrl: "https://github.com/VernonTamba/simple-todo-list-app",
-      demoUrl: "-",
+      demoUrl: "https://simple-todo-list-app-bay.vercel.app/",
+      lastUpdate: "July 3, 2023",
     },
     {
       name: "Simple Movie List",
@@ -102,7 +111,8 @@ const MiniProjects = ({ darkMode }) => {
         "Another movie grid app that brings you movies that you might be interested in. The movies are retrieved from an open movie database called OMDb API. Plus, this app has dark mode, man.",
       techUsed: "React JS, CSS",
       codeUrl: "https://github.com/VernonTamba/simple-movies-list",
-      demoUrl: "-",
+      demoUrl: "https://simple-movies-list.vercel.app/",
+      lastUpdate: "July 5, 2023",
     },
   ];
 
@@ -124,6 +134,9 @@ const MiniProjects = ({ darkMode }) => {
               <source src={project.videoUrl} type="video/mp4" />
             </video>
             <p className="MiniProjects__description">{project.description}</p>
+            <p className="MiniProjects__lastUpdate">
+              Last updated: {project.lastUpdate}
+            </p>
             <div className="MiniProjects__technologies">
               <p>{project.techUsed}</p>
             </div>

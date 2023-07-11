@@ -8,7 +8,7 @@ const Header = ({ darkMode, setDarkMode }) => {
     <header className={`Header ${darkMode && "darkMode"}`}>
       <h1 className="Header__logo">V-Portfolio</h1>
       <img
-        className="Header__mode"
+        className={`Header__mode ${darkMode && "Header__mode--darkMode"}`}
         src={darkMode ? lightModeImage : darkModeImage}
         alt="darkLightMode"
         onClick={() => setDarkMode(!darkMode)}

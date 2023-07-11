@@ -1,6 +1,6 @@
 .ContactMe {
   padding: 0 100px;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -32,7 +32,7 @@
   text-decoration: none;
   color: #1e2022;
   border-radius: 1rem;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.1s ease-in-out;
   padding-inline: 30px;
 }
 
@@ -67,18 +67,34 @@
     padding: 0 50px;
   }
 
+  .ContactMe__item {
+    height: 5em;
+  }
+
+  .ContactMe__appName {
+    font-size: 1.3rem;
+  }
+
   .ContactMe__container {
     flex: 1.5;
+    gap: 2em;
   }
 }
 
 @media screen and (max-width: 800px) {
   .ContactMe {
-    padding: 0 50px;
-    margin-block: 80px;
+    padding: 80px 50px;
     flex-direction: column;
   }
   .ContactMe__title {
     text-align: center;
+  }
+
+  .ContactMe__appName {
+    font-size: 1.1rem;
+  }
+
+  .ContactMe__profileName {
+    font-size: 0.9rem;
   }
 }

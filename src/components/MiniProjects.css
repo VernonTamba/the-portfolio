@@ -49,6 +49,11 @@
   text-transform: uppercase;
 }
 
+.MiniProjects__lastUpdate {
+  font-weight: 200;
+  font-style: italic;
+}
+
 .MiniProjects__technologies {
   padding: 10px 20px;
   background-color: rgba(var(--color-lessDark), 1);
@@ -94,15 +99,24 @@
   font-weight: bold;
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .MiniProjects {
-    margin-bottom: 80px;
+    padding-bottom: 80px;
   }
-}
+} */
 
 @media screen and (max-width: 500px) {
   .MiniProjects {
-    padding: 30px 50px;
+    padding: 80px 50px;
+  }
+
+  .MiniProjects__item {
+    padding: 100px;
+  }
+
+  .MiniProjects__preview {
+    height: 30em;
+    width: 30em;
   }
 
   .MiniProjects__title {

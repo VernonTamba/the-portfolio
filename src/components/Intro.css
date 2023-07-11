@@ -67,7 +67,7 @@
   .Intro {
     padding: 0 50px;
     flex-direction: column;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
   }
 
   .Intro__title {

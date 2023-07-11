@@ -36,7 +36,7 @@
 .Ending__profilePicture {
   position: absolute;
   height: 30%;
-  width: 30%;
+  width: fit-content;
   object-fit: contain;
   bottom: 0;
 }
@@ -90,5 +90,29 @@
 
   .Ending__footerDiv {
     font-size: 0.6rem;
+  }
+
+  .Ending__profilePicture {
+    height: 25%;
+    width: fit-content;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .Ending__title {
+    font-size: 2rem;
+  }
+
+  .Ending__content {
+    font-size: 0.7rem;
+  }
+
+  .Ending__contentFooter {
+    font-size: 0.9rem;
+  }
+
+  .Ending__profilePicture {
+    height: 20%;
+    width: fit-content;
   }
 }

@@ -83,7 +83,7 @@
 
 @media screen and (max-width: 500px) {
   .Main {
-    padding: 0 50px;
+    padding: 50px 50px;
   }
 
   .Main__header {
