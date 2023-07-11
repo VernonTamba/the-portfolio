@@ -58,7 +58,7 @@ const MiniProjects = ({ darkMode }) => {
       name: "Expenses List Info",
       videoUrl: `${ExpensesInfoVideo}`,
       description:
-        "A small and simple app where it can store the expenses information and will display the summary information based on the specified year in the diagram form. As a matter of fact, this project was the requirement for my last phase of the internship interview in SRKK!",
+        "A small and simple app where it can store the expenses information and will display the summary information based on the specified year in the diagram form. Fun fact, this project was the requirement for my last phase of the internship interview in SRKK!",
       techUsed: "HTML, CSS (a bit of Bootstrap), JavaScript",
       codeUrl: "https://github.com/VernonTamba/expenses-list-info",
       demoUrl: "https://expenses-list-info.vercel.app/",
